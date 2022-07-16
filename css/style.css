@@ -8,10 +8,26 @@
     --font-link: 'Albert Sans', sans-serif;
 }
 
+@media only screen and (max-width: 768px) {
+    nav div#main-nav a {
+        display: none;
+    }
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
+}
+
+body {
+    background-color: var(--dark-purple);
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -156,4 +172,11 @@ nav div#sec-nav a#play-now {
 
 nav div#sec-nav a#play-now:hover {
     background-color: rgb(119, 119, 212);
+}
+
+section#overview {
+    background: var(--dark-purple) url('../images/bg-image.jpg') center top/cover no-repeat ;
+    width: 98vw;
+    height: 700px;
+    margin: auto;
 }
