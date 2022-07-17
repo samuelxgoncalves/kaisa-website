@@ -8,7 +8,7 @@
     --dark-purple: rgb(0, 9, 19);
 
     --font-link: 'Albert Sans', sans-serif;
-    --font-hightlight: 'Merriweather', serif;
+    --font-highlight: 'Merriweather', serif;
     --font-text: 'Roboto', sans-serif;
 }
 
@@ -73,7 +73,7 @@ header {
 
 nav {
     position: relative;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(34, 34, 34, 0.97);
     padding: 15px 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
 }
@@ -214,3 +214,32 @@ nav div#sec-nav a#play-now {
 nav div#sec-nav a#play-now:hover {
     background-color: rgb(119, 119, 212);
 }
+
+main section#overview {
+    position: relative;
+    background: rgb(0, 29, 63) url('../images/bg-image.jpg') center top/cover no-repeat;
+    width: 100%;
+    height: 90vh;
+    -webkit-mask-image: linear-gradient(180deg, black 60%, transparent 100%);
+    mask-image: linear-gradient(180deg, black 60%, transparent 100%);
+}
+
+main section#overview h1#champ-title {
+    position: absolute;
+    color: white;
+    font-family: var(--font-text);
+    font-size: 1.8em;
+    text-align: center;
+    letter-spacing: 3px;
+    bottom: 10%;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+main section#overview h1#champ-title span {
+    color: white;
+    font-family: var(--font-highlight);
+    font-size: 3.5em;
+    letter-spacing: 3px;
+}
+
