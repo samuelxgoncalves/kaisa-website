@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
     --light-blue: rgb(140, 140, 255);
@@ -62,7 +62,7 @@
 
 body {
     background-color: var(--dark-purple);
-    height: 1800px;
+    height: 1500px;
 }
 
 header {
@@ -215,6 +215,10 @@ nav div#sec-nav a#play-now:hover {
     background-color: rgb(119, 119, 212);
 }
 
+main {
+    position: relative;
+}
+
 main section#overview {
     position: relative;
     background: rgb(0, 29, 63) url('../images/bg-image.jpg') center top/cover no-repeat;
@@ -243,3 +247,80 @@ main section#overview h1#champ-title span {
     letter-spacing: 3px;
 }
 
+main section#overview p {
+    position: absolute;
+    color: white;
+    font-family: var(--font-link);
+    font-size: 0.6em;
+    letter-spacing: 3px;
+    writing-mode: vertical-lr;
+    top: 40%;
+    left: 1%;
+    transform: rotate(180deg);
+}
+
+main section#overview p::after {
+    content: " —";
+}
+
+main section#champ-overview {
+    position: relative;
+    max-width: 1000px;
+    height: 325px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+main section#champ-overview div#champ-stats {
+    position: absolute;
+    background-color: transparent;
+    width: 500px;
+    height: 325px;
+}
+
+main section#champ-overview div#champ-stats p#role {
+    position: absolute;
+    color: white;
+    font-family: var(--font-text);
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.5em;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+main section#champ-overview div#champ-stats p#role img {
+    display: block;
+    margin: auto;
+}
+
+main section#champ-overview div#champ-stats p#role span {
+    color: rgb(208, 168, 92);
+    display: block;
+}
+
+main section#champ-overview div#champ-stats p#difficulty {
+    position: absolute;
+    color: white;
+    font-family: var(--font-text);
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.5em;
+    top: 50%;
+    right: 25%;
+    transform: translate(-50%, -29%);
+}
+
+main section#champ-overview div#champ-stats p#difficulty img {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+main section#champ-overview div#champ-stats p#difficulty span {
+    color: rgb(208, 168, 92);
+    display: block;
+}
