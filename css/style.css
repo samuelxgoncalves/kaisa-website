@@ -12,32 +12,44 @@
     --font-text: 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1040px) {
     nav div#main-nav a#link-5 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 920px) {
     nav div#main-nav a#link-4 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
     nav div#main-nav a#link-3 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 690px) {
     nav div#main-nav a#link-2 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 550px) {
     nav div#main-nav a#link-1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav div#sec-nav a#lang-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    nav div#sec-nav a#play-now {
         display: none;
     }
 }
